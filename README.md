@@ -13,7 +13,7 @@ python test_predict.py -set test.h5 -outfile test_predicted.csv
 the following code should create the predictions csv file.
 ---
 
-** training the model **
+## training the model
 The code to train the model appears in `train_model.py` file.
 If you wish to retrain the model you can run the code again using
 
@@ -21,7 +21,7 @@ If you wish to retrain the model you can run the code again using
 python train_model.py
 ```
 ---
-** added files **
+## added files
 The following files are added for further invistigation:
 
 `test_predicted.csv` - predicted fonts on given test dataset
