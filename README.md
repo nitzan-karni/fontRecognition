@@ -11,6 +11,7 @@ python test_predict.py -set test.h5 -outfile test_predicted.csv
 ```
 
 the following code should create the predictions csv file.
+
 ---
 
 ## training the model
@@ -20,6 +21,7 @@ If you wish to retrain the model you can run the code again using
 ```
 python train_model.py
 ```
+
 ---
 ## added files
 The following files are added for further invistigation:
