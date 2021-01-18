@@ -29,7 +29,9 @@ The following files are added for further invistigation:
 `test_predicted.csv` - predicted fonts on given test dataset
 `finalModel.h5` 	 - pretrained model.
 `test_predict.py`	 - The file to execute preprocess and predictions on given dataset.
+`test_predict.ipynb`	 - The same as `test_predict.py` just in notebook.
 `train_model.py` 	 - The code used to train the final model.
 `project.ipynb` 	 - jupiter notebook containing the research process I conducted. contains the vizualizations, evaluations and failed models.
 `project_process.py` - same as `project.ipynb` but in as py file. a little more orginized.
+
 
