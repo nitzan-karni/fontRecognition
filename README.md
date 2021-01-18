@@ -1,6 +1,6 @@
 # Font recognition project
 
-** runing the model on the test set **
+* runing the model on the test set *
 choose a dataset to predict. ( f.e test.h5 )
 choose the name  of the output file, must end with .csv ( f.e test_predicted.csv )
 run the following code from the commandline, at the same directory of the model
