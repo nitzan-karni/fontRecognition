@@ -2,7 +2,7 @@
 
 ## runing the model on the test set
 
-* choose a dataset to predict. ( f.e test.h5 )
+* choose a path to dataset to predict. ( f.e test.h5, if the dataset is in the same directory )
 * choose the name  of the output file, must end with .csv ( f.e test_predicted.csv )
 * run the following code from the commandline, at the same directory of the model
 
@@ -17,7 +17,7 @@ the following code should create the predictions csv file.
 ## training the model
 * The code to train the model appears in `train_model.py` file.
 * If you wish to retrain the model you can run the code again using
-
+* just move the `train.h5`, `SynthText`, `SynthText_val` to the model directory
 ```
 python train_model.py
 ```
