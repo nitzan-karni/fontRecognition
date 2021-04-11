@@ -1,5 +1,16 @@
 # Font recognition project
-![image](https://user-images.githubusercontent.com/51075167/114317977-63718500-9b13-11eb-89a4-d8130728ca92.png)
+The Objective of the project is that given a dataset of N pictures containing Arbitrary scenery overlayed
+by different textual data, classify each letter in the dataset to the correct font.
+Few presumptions on the data:
+* Each overlayed word is written in one font
+* There are 3 fonts to classify
+* The words can be rotated, variated in color, opacity, shear and size.
+* A word bounding box is given
+* A character bounding box is given 
+
+![image](https://user-images.githubusercontent.com/51075167/114318173-7fc1f180-9b14-11eb-8915-59c42fbd3190.png)
+
+
 
 ## runing the model on the test set
 
