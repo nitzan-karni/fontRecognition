@@ -47,7 +47,7 @@ And after a certain letter is predicted I set a vote between the other letters i
 ## Results
 Accuracy:  0.96377164
 Recall:  0.95401317
-Persision:  0.96627134
+Precision:  0.96627134
 AUC:  0.9784279
 
 Confusion matrix
