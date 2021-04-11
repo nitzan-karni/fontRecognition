@@ -1,5 +1,5 @@
 # Font recognition project
-The Objective of the project is that given a dataset of N pictures containing Arbitrary scenery overlayed
+The Objective: given a dataset of N pictures containing Arbitrary scenery overlayed
 by different textual data, classify each letter in the dataset to the correct font.
 Few presumptions on the data:
 * Each overlayed word is written in one font
