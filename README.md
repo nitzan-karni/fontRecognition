@@ -10,7 +10,63 @@ Few presumptions on the data:
 
 ![image](https://user-images.githubusercontent.com/51075167/114318173-7fc1f180-9b14-11eb-8915-59c42fbd3190.png)
 
+Implementation: 
 
+Corped the characters by the given bounding boxes and splitted to different images.
+Converted the color to grey on each character.
+Resized to image size of 32X32.
+Streighten and align the charcters to standard orientation.
+
+![image](https://user-images.githubusercontent.com/51075167/114318713-f8c24880-9b16-11eb-9bea-c0ffe771a62c.png)
+
+Eventually after multiple approaches ( data synthesis, by character ensemble model, VGG16 / Mobilenet)
+I decided the best train efficiancy and genralization to accurracy trade off is offered by the simplest CNN
+
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_20 (Conv2D)           (None, 30, 30, 32)        320       
+_________________________________________________________________
+layer_normalization_8 (Layer (None, 30, 30, 32)        60        
+_________________________________________________________________
+max_pooling2d_20 (MaxPooling (None, 15, 15, 32)        0         
+_________________________________________________________________
+conv2d_21 (Conv2D)           (None, 13, 13, 64)        18496     
+_________________________________________________________________
+max_pooling2d_21 (MaxPooling (None, 6, 6, 64)          0         
+_________________________________________________________________
+flatten_9 (Flatten)          (None, 2304)              0         
+_________________________________________________________________
+dense_20 (Dense)             (None, 88)                202840    
+_________________________________________________________________
+dense_21 (Dense)             (None, 3)                 267       
+=================================================================
+Total params: 221,983
+Trainable params: 221,983
+
+loss: mean_squared_error
+Optimizer: adam
+
+Training data: 9790 samples
+Validation data: 2448 samples
+Epochs: 20
+Time to train: 7min
+
+And after a certain letter is predicted I set a vote between the other letters in the word which deciedes on the word's font.
+
+## Results
+Accuracy:  0.96377164
+Recall:  0.95401317
+Persision:  0.96627134
+AUC:  0.9784279
+
+Confusion matrix
+![image](https://user-images.githubusercontent.com/51075167/114319858-f2829b00-9b1b-11eb-9535-449461af06fd.png)
+
+ROC curve (before voting)
+![image](https://user-images.githubusercontent.com/51075167/114319867-f9111280-9b1b-11eb-9fa8-92e044b47033.png)
+
+Accurracy and loss over the training epochs (before voting)
+![image](https://user-images.githubusercontent.com/51075167/114319879-00382080-9b1c-11eb-976e-91e5c39d94db.png)
 
 ## runing the model on the test set
 
