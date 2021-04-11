@@ -22,24 +22,15 @@ Streighten and align the charcters to standard orientation.
 Eventually after multiple approaches ( data synthesis, by character ensemble model, VGG16 / Mobilenet)
 I decided the best train efficiancy and genralization to accurracy trade off is offered by the simplest CNN
 
-Layer (type)                 Output Shape              Param  
-=================================================================
-conv2d_20 (Conv2D)           (None, 30, 30, 32)        320       
-_________________________________________________________________
-layer_normalization_8 (Layer (None, 30, 30, 32)        60        
-_________________________________________________________________
-max_pooling2d_20 (MaxPooling (None, 15, 15, 32)        0         
-_________________________________________________________________
-conv2d_21 (Conv2D)           (None, 13, 13, 64)        18496     
-_________________________________________________________________
-max_pooling2d_21 (MaxPooling (None, 6, 6, 64)          0         
-_________________________________________________________________
-flatten_9 (Flatten)          (None, 2304)              0         
-_________________________________________________________________
-dense_20 (Dense)             (None, 88)                202840    
-_________________________________________________________________
-dense_21 (Dense)             (None, 3)                 267       
-=================================================================
+* conv2d_20 (Conv2D)           (None, 30, 30, 32)        320       
+* layer_normalization_8 (Layer (None, 30, 30, 32)        60        
+* max_pooling2d_20 (MaxPooling (None, 15, 15, 32)        0         
+* conv2d_21 (Conv2D)           (None, 13, 13, 64)        18496     
+* max_pooling2d_21 (MaxPooling (None, 6, 6, 64)          0         
+* flatten_9 (Flatten)          (None, 2304)              0         
+* dense_20 (Dense)             (None, 88)                202840    
+* dense_21 (Dense)             (None, 3)                 267       
+
 Total params: 221,983
 Trainable params: 221,983
 
