@@ -22,7 +22,7 @@ Streighten and align the charcters to standard orientation.
 Eventually after multiple approaches ( data synthesis, by character ensemble model, VGG16 / Mobilenet)
 I decided the best train efficiancy and genralization to accurracy trade off is offered by the simplest CNN
 
-Layer (type)                 Output Shape              Param #   
+Layer (type)                 Output Shape              Param  
 =================================================================
 conv2d_20 (Conv2D)           (None, 30, 30, 32)        320       
 _________________________________________________________________
