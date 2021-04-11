@@ -50,13 +50,11 @@ And after a certain letter is predicted I set a vote between the other letters i
 * Precision:  0.96627134
 * AUC:  0.9784279
 
-Confusion matrix
+
 ![image](https://user-images.githubusercontent.com/51075167/114319858-f2829b00-9b1b-11eb-9535-449461af06fd.png)
 
-ROC curve (before voting)
+### before voting
 ![image](https://user-images.githubusercontent.com/51075167/114319867-f9111280-9b1b-11eb-9fa8-92e044b47033.png)
-
-Accurracy and loss over the training epochs (before voting)
 ![image](https://user-images.githubusercontent.com/51075167/114319879-00382080-9b1c-11eb-976e-91e5c39d94db.png)
 
 ## runing the model on the test set
