@@ -45,10 +45,10 @@ Time to train: 7min
 And after a certain letter is predicted I set a vote between the other letters in the word which deciedes on the word's font.
 
 ## Results
-Accuracy:  0.96377164
-Recall:  0.95401317
-Precision:  0.96627134
-AUC:  0.9784279
+* Accuracy:  0.96377164
+* Recall:  0.95401317
+* Precision:  0.96627134
+* AUC:  0.9784279
 
 Confusion matrix
 ![image](https://user-images.githubusercontent.com/51075167/114319858-f2829b00-9b1b-11eb-9535-449461af06fd.png)
