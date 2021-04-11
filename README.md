@@ -1,4 +1,5 @@
 # Font recognition project
+![image](https://user-images.githubusercontent.com/51075167/114317977-63718500-9b13-11eb-89a4-d8130728ca92.png)
 
 ## runing the model on the test set
 
