@@ -8,7 +8,7 @@ Few presumptions on the data:
 * A word bounding box is given
 * A character bounding box is given 
 
-![image](https://user-images.githubusercontent.com/51075167/114318173-7fc1f180-9b14-11eb-8915-59c42fbd3190.png)
+![image](https://user-images.githubusercontent.com/51075167/bay+area_90_bb.jpg)
 
 Implementation: 
 
